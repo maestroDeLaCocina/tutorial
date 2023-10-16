@@ -1,24 +1,20 @@
 
 
 <template>
-    
     <div>
-        <h1>
-            tutorial de vue
-        </h1>
-        <hr/>
-        <VModel/>
+        <v-app>
+            <TodosIndex/>
+        </v-app>
     </div>
-    
-    
 </template>
 
 
 <script>
-import VModel from '../components/directives/VModel.vue'
-export default{
-    name:"App",
-    components: {VModel}
+import TodosIndex from './todos/TodosIndex.vue';
+
+export default {
+    name: "App",
+    components: { TodosIndex}
 }
 
 </script>
@@ -26,7 +22,7 @@ export default{
 
 
 <style>
-    h1{
-        color: red;
-    }
+h1 {
+    color: red;
+}
 </style>
